@@ -1,12 +1,9 @@
-const todos=[];
-const addTodo=(name)=>{
-todos.push(name);
+const todo=[];
+const todoAdd=(User)=>{
+todos.push(User);
 return true;
 }
-const getAllTodos=()=>{
-    return todos;
+const allTodosGet=()=>{
+    return todo;
 }
-module.exports={
-    getAllTodos,
-    addTodo
-}
+module.exports={allTodosGet,todoAdd}
