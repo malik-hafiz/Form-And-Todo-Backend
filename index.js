@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 app.get("/",(req,res)=>{
- res.send("hafiz")
+ res.send("Hello Backend")
 })
 app.set("view engine" , "ejs");
 app.set("views" , "./views")
