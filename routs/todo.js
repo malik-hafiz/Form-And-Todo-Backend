@@ -1,11 +1,11 @@
 const express =require('express');
-const { addTodo, getAllTodos } = require('../controller/todo');
+const { addTodo, allTodoGet } = require('../controller/todo');
 const router = express.Router();
 router.post('/add',(req,res)=>{
-addTodo(req.body.data);
+ addTodo(req.body.data);
 res.send("todo Added!");
 })
 router.get('/',(req,res)=>{
-res.render("todo",{todos:getAllTodos()});
+res.render("todo",{todo:allTodoGet()});
 })
 module.exports= router;
